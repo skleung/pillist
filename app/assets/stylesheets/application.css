@@ -11,64 +11,104 @@
  *= require_self
  *= require_tree .
  */
-
+.shading{
+	width:100%;
+    height:100%;
+    position:absolute;
+    background-color:#000;
+    opacity:0.1;
+}
 .logo-wrapper{
+	position: relative;
 	height: 150px;
 	margin-top: 5%;
 }
+.sm-logo{
+	height: 30px;
+}
 .logo{
 	position: absolute;
-	left: -20%%;
-	width: 40%;
+	left: -15%%;
+	width: 30%;
 	margin-left: 50%;
-	height: 150px;
 }
 .tagline{
+	margin-top: 40px;
 	height: auto;
+	max-width: ;
 	font-family: 'Lora', sans-serif;
 	color: #fff;
 }
-.hero-text {
-  margin-right: 20%;
-  width: auto;
-  margin-top: 7%;
-  float: right;
-  text-align: left;
-  font-size: 30px;
-  color: white;
-  padding-top: 15px;
-}
-body{
-	font-family: 'Oxygen', sans-serif;
-}
 .title {
-  font-size: 35px;
+  margin-top: 15px;
+  font-size: 24px;
   font-weight: bold;
   text-transform: lowercase;
   font-weight: 400;
   text-align: center;
+  color: #A1CAF1;
 /*  position: absolute;
 	left: -35%;
 	width: 70%;
 	margin-left: 50%;*/
 }
 body{
+	font-family: 'PT Sans', sans-serif;
+	background-color: rgba(0,0,0,0.05);
 	margin-top: 0px;
 	padding: 0px;
 	height: 100%;
+	color: #555555;
 }
-.title strong {
-  font-style: italic;
-  color: #A1CAF1;
+.about-list{
+	width: 60%;
+	margin:auto;
+	list-style: none;
 }
-.description-wrapper{
-	margin-top: 50px;
-	height: 300px;
-	color: #fff;
+.about-blurb{
+	width: 50%;
+	margin:auto;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+body h1{
+	font-family: 'Lora', serif;
+	color: #A1CAF1;
+	margin-bottom: 5px;
+}
+
+.about-list > li {
+	position: relative;
+	background-color: #fff;
+	margin: 0 0 70px 0px;
+	padding: 0px 15px 30px;
+	font-size: 18px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	z-index: 1;
+	-webkit-transition: all 0.6s ease-in-out 0s;
+	-moz-transition: all 0.6s ease-in-out 0s;
+	-o-transition: all 0.6s ease-in-out 0s;
+	transition: all 0.6s ease-in-out 0s;
+}
+
+strong{
+	color: #A1CAF1;
 }
 .description{
+	font-family: 'PT Sans', sans-serif;
+	font-size: 18px;
+}
+.email-prompt strong{
+
+	text-decoration: underline;
+	font-weight: 700;
+}
+.email-prompt{
 	text-align: center;
-	font-size: 22px;
+	left: 3%;
+	font-size: 20px;
+	font-family: 'Lora', sans-serif;
 }
 #email-input{
 	position: relative;
@@ -82,7 +122,7 @@ body{
 	width: 462px;
 	height: 55px;
 	padding: 0 60px 0 67px;
-	font-family: 'Oxygen',sans-serif;
+	font-family: 'PT Sans',sans-serif;
 	border-radius: 28px;
 	border: 1px solid #dcdcdc;
 	-webkit-box-shadow: inset 0 3px 3px -2px #cccccc;
@@ -99,6 +139,23 @@ body{
 #email:focus{
 	outline:none;
 }
+#contact{
+	text-align: center;
+	font-family: "Lora", serif;
+	font-size: 18px;
+	margin-top: 20px;
+}
+#contact a{
+	color: #4169e1;
+	text-decoration: none;
+}
+#footer{
+	margin:30px 0px 0px 0px;
+	border-top: 1px solid #777;
+	padding-top: 10px;
+	text-align: center;
+	background-color: white;
+}
 .row{
 	width: 100%;
 }
@@ -110,42 +167,38 @@ body{
 	width: 66%;
 	display: inline-block;
 }
-.landing-photo {
-	position: absolute;
-	padding: 0px;
-	margin:0px;
-	width: 100%;
-	height: 100%;
-	background: url('medication.jpg') no-repeat center center;
-	background-position: cover;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-
-}
-.landing-background {
-	position: fixed;
-	padding: 0px;
-	margin:0px;
-	width: 100%;
-	height: 100%;
-
-
-	 -webkit-filter: blur(3px);
-  	-moz-filter: blur(3px);
-  	-o-filter: blur(3px);
-  	-ms-filter: blur(3px);
-  	filter: blur(3px);
-}
 
 .wrapper{
 	width: 80%;
 	margin: auto;
 	height: 100%;
 }
-.footer{
+.scroll-down{
 	position: absolute;
+	height: 60px;
+	bottom: 0px;
+	z-index:50;
+	text-transform: uppercase;
+	font-size: 20px;
+	text-align: center;
+	width: 100%;
+	color: white;
+	text-decoration: none;
+}
+.down-icon{
+	height: 20px;
+	z-index: 55;
+}
+.scroll-down:hover > .overlay{
+    width:100%;
+    height:100%;
+    position:absolute;
+    background-color:#000;
+    opacity:0.5;
+    z-index:30;
+}
+.footer{
+	position: relative;
 	left: 0px;
 	bottom: 15px;
 	width: 100%;
@@ -153,6 +206,9 @@ body{
 	font-size: 20px;
 	color: #cbebb1;
 	z-index: 50;
+}
+.footer:hover{
+
 }
 .footer a{
 	color: inherit;
@@ -176,4 +232,14 @@ body{
 }
 .shadow{
 	text-shadow: 2px 2px 2px #222222;
+}
+.sm-shadow{
+	text-shadow: 1px 1px 2px #222222;
+}
+.outline{
+	text-shadow: 1px 1px 0 #666, 1px -1px 0 #666, -1px 1px 0 #666, -1px -1px 0 #666;
+}
+
+#home #about{
+	position: absolute;
 }

@@ -1,31 +1,129 @@
-<div class = "landing-background"></div>
-<div class = "content">
-	<div class = "logo-wrapper">
-		<!-- <div class = "logo"> -->
-		<%= link_to( image_tag('pilllist.l as pill.svg', :class => "logo"), image_path("compiled logos.png")) %>
-		<!-- </div> -->
+<div id = "home">
+	<div class = "landing-background">
+	<%=image_tag('pills background.png', :id => "landing-background")%>
 	</div>
-	<div class = "tagline">
-		<div class = "title shadow">Medication Organization</div>
-		<div class = "title"><strong><i> Reimagined</i></strong></div>
-	</div>
-	<div class = "description-wrapper">
-		<div class = "description shadow">
-			We're building a new way to ...[description goes here]
-			<br/>
-			<b>Sign up</b> to learn more:
+	<div class = "content">
+		<div class = "logo-wrapper">
+			<!-- <div class = "logo"> -->
+			<%= image_tag('pilllist.l as pill.svg', :class => "logo") %>
+			<!-- </div> -->
 		</div>
-		<div id = "email-input">
-			<input autocomplete = "off" id = "email" placeholder = "email address" type = "text">
+		<div class = "tagline">
+			<div class = "title"><i>Reimagine</i></br><b> medication</b> </div>
 		</div>
 	</div>
-
-	<div class = "footer shadow">
-		<ul>
-			<li><a href = "#">About</a></li>
-			<li><a href = "#">Team</a></li>
-			<li><a href = "#">Contact</a></li>
-		</ul>
-	</div>
-	</div>
+	<a href = "#about" class = "scroll-down scroll">
+		<div class = "overlay">
+			Learn More<br/>
+		<%= image_tag('down.png', :class => "down-icon") %>
+		</div>
+	</a>
 </div>
+<div id = "about">
+	<div class = "about-blurb" id = "about-list-start">
+		<h1>Medication organization <i>made simple</i></h1>
+			<p class = "description">
+			Our company, <strong>Pillist™</strong>, is developing a mobile and web application to help patients better manage their medications by automatically generating a simplified and organized medication list through partnership with the patient’s own pharmacy.
+			</p>
+		</li>
+	</div>
+	<ul class = "about-list">		
+		<li class = "about-list-1">
+			<h1>Patients need:</h1>
+			<strong>a better way of keeping track of their medications.</strong>
+			<p>Five common ways patients manage their medications:
+			<ul>
+				<li>They don't</li>
+				<li>Hand-written lists on paper</li>
+				<li>Pills boxes</li>
+				<li>medicine bottles on hand</li>
+				<li>Excel spreadsheets with manually entered data</li>
+			</ul> 
+			</p>
+		</li>
+		<li class = "about-list-2">
+			<h1>Why is this a problem for patients?</h1>
+			<ol>
+				<li> It’s hard to remember to take medications consistently at specific times </li>
+				<li> Medications may change following a clinic visit or hospitalization</li>
+				<li>It can be difficult to remember how to take certain medications (e.g. without food)</li>
+				<li> There can be confusion with brand-name and generic medications</li>
+				<li> Medications are becoming increasingly specialized as multiple formulations (e.g. extended-
+				release) and multiple strengths of the same drug become available </li>
+				<li> Keeping track of available refills and when to refill can be challenging</li>
+			</ol>
+		</li>
+		<li class = "about-list-3">
+			<h1>The facts:</h1>
+			<p> An estimated 
+
+1/3 – 1/2 of U.S. patients do not adhere to prescribed medication regimens. Studies have consistently 
+
+shown that 20% to 30% of prescriptions are never filled by patients. The lack of adherence has dramatic 
+
+effects on health. In the U.S., it is estimated to cause approximately 125,000 deaths, at least 10% of 
+
+hospitalizations, and a substantial increase in morbidity and mortality. 
+			</p>
+		</li>
+		
+		<li class = "about-list-4">
+			<h1>Physicans need:</h1>
+			<p>to perform efficient Medication Reconciliations and deliver the
+
+best possible care while caregivers need this information to help the patient take his or her medications.</p>
+		</li>
+
+		<li class = "about-list-5">
+		<h1>Pharmacies need:</h1>
+		<p>
+ a better method of communicating with patients and incentivizing them to refill 
+
+prescriptions in order to keep the patients healthy and happy.</p>
+		</li>
+
+		<li class = "about-list-6">
+		<h1>Our aim:</h1>
+		<p> to create a mobile/web application that automatically generates a simplified and organized
+
+medication list that can be shared with the patient’s providers and caregivers, saves time with electronic 
+
+refill capability, and provides a better relationship with a patient’s pharmacy and pharmacist through a 
+
+rewards system.</p>
+		</li>
+		<div id = "email-input">
+			<div class = "email-prompt">
+				<strong>Sign up</strong> to get on the mailing list:
+			</div>
+				<input autocomplete = "off" id = "email" placeholder = "email address" type = "text">
+			</div>
+		</div>
+	</ul>
+</div>
+<div id = "contact">
+	or <strong>contact us</strong> at <a href = "mailto:info@pillist.com">info@pillist.com</a>
+</div>
+
+<div id = "footer">
+	<a href = "#home"><%= image_tag('pilllist.copyright.svg', :class => "sm-logo") %></a> 
+</div>
+
+<%= javascript_include_tag 'jquery', 'application' %>
+<!--
+<%= javascript_tag do %>
+var slideshow = new Slideshow("about-list", "about-list-start", 200);
+console.log(slideshow.count);
+$(window).bind("scroll", function() {
+	console.log($(this).scrollTop() + "is less than "+slideshow.threshold);
+    if ($(this).scrollTop() > slideshow.threshold) {
+    	var nextSlide = $("#"+slides+"-"+slideshow.count);
+    	console.log("slide"+slideshow.count);
+    	nextSlide.fadeIn();
+    	nextSlide.slideUp();
+    	slideshow.count+=1;
+    	slideshow.threshold = slideshow.getTop(nextSlide) + nextSlide.height - slideshow.threshold;
+    }
+});
+<%end%>
+-->
