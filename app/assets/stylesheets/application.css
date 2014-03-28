@@ -34,6 +34,7 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
+	background-color: white;
 	overflow: hidden;
 }
 .shading{
@@ -133,6 +134,26 @@ strong{
 	left: 3%;
 	font-size: 20px;
 	font-family: 'Lora', sans-serif;
+}
+.email-icon{
+	position: absolute;
+	top: 40px;
+	left: 20px;
+	width: 32px;
+	height: 23px;
+}
+.email-icon > img{
+	height: 100%;
+	width: auto;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	vertical-align: middle;
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: gray;
+	-webkit-filter: grayscale(1);
 }
 #email-input{
 	position: relative;
