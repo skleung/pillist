@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="365.94659"
+   height="170"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r"
+   sodipodi:docname="mymedlist.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="312.14287"
+     inkscape:cy="191.42908"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="575"
+     inkscape:window-height="453"
+     inkscape:window-x="289"
+     inkscape:window-y="107"
+     inkscape:window-maximized="0"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-62.857132,-439.50487)">
+    <path
+       sodipodi:type="arc"
+       style="fill:none"
+       id="path2985"
+       sodipodi:cx="225.71428"
+       sodipodi:cy="356.64789"
+       sodipodi:rx="162.85715"
+       sodipodi:ry="252.85715"
+       d="m 388.57143,356.64789 c 0,139.64914 -72.91363,252.85715 -162.85715,252.85715 -89.94352,0 -162.857148,-113.20801 -162.857148,-252.85715 0,-139.64915 72.913628,-252.85715 162.857148,-252.85715 89.94352,0 162.85715,113.208 162.85715,252.85715 z" />
+    <text
+       xml:space="preserve"
+       style="font-size:63.27652359px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Source Sans Pro;-inkscape-font-specification:Source Sans Pro"
+       x="88.291954"
+       y="536.06299"
+       id="text2989"
+       sodipodi:linespacing="125%"
+       transform="scale(1.0484901,0.95375246)"><tspan
+         sodipodi:role="line"
+         id="tspan2991"
+         x="88.291954"
+         y="536.06299"
+         style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;font-family:Palatino Linotype;-inkscape-font-specification:Palatino Linotype Bold Italic">my</tspan><tspan
+         sodipodi:role="line"
+         x="88.291954"
+         y="615.15863"
+         id="tspan2999" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:87.48134613px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lora;-inkscape-font-specification:Lora"
+       x="87.546555"
+       y="590.68616"
+       id="text3003"
+       sodipodi:linespacing="125%"
+       transform="scale(1.0384133,0.9630077)"><tspan
+         sodipodi:role="line"
+         id="tspan3005"
+         x="87.546555"
+         y="590.68616"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Palatino Linotype;-inkscape-font-specification:Palatino Linotype Bold">med<tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;font-family:Palatino Linotype;-inkscape-font-specification:Palatino Linotype Bold"
+   id="tspan3007">list</tspan></tspan></text>
+  </g>
+</svg>
