@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="579.85138"
+   height="171.57587"
+   id="svg3092"
+   version="1.1"
+   inkscape:version="0.48.4 r"
+   sodipodi:docname="pilllist.serif.svg">
+  <defs
+     id="defs3094" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="222.65346"
+     inkscape:cy="356.40607"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="708"
+     inkscape:window-height="586"
+     inkscape:window-x="137"
+     inkscape:window-y="89"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata3097">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-152.34654,-865.69712)">
+    <text
+       xml:space="preserve"
+       style="font-size:179.18504333px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Palatino Linotype;-inkscape-font-specification:Palatino Linotype Bold"
+       x="142.40881"
+       y="1030.9182"
+       id="text3100"
+       sodipodi:linespacing="125%"
+       transform="scale(1.0397593,0.96176105)"><tspan
+         sodipodi:role="line"
+         id="tspan3102"
+         x="142.40881"
+         y="1030.9182"
+         style="font-weight:bold;-inkscape-font-specification:Palatino Linotype Bold Italic"><tspan
+           style="font-weight:bold;fill:#a1caf1;-inkscape-font-specification:Palatino Linotype Bold Italic;fill-opacity:1"
+           id="tspan3106">pill</tspan><tspan
+           style="font-style:italic;font-weight:bold;fill:#ffffff;-inkscape-font-specification:Palatino Linotype Bold Italic;fill-opacity:1"
+           id="tspan3104">list</tspan></tspan></text>
+  </g>
+</svg>
