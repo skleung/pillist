@@ -142,19 +142,19 @@
          style="font-size:299.61550903px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#a1caf1;fill-opacity:1;font-family:Palatino Linotype;-inkscape-font-specification:Palatino Linotype Bold">ist</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:247.13652039px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#a1caf1;fill-opacity:1;stroke:none;font-family:Lora;-inkscape-font-specification:Sans"
-       x="863.55249"
-       y="1180.2059"
+       style="font-size:187.68493652px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#a1caf1;fill-opacity:1;stroke:none;font-family:Lora;-inkscape-font-specification:Sans"
+       x="827.80408"
+       y="1139.2178"
        id="text3956-5-1-9"
        sodipodi:linespacing="125%"
-       transform="scale(1.1111527,0.8999663)"
-       inkscape:transform-center-y="152.08459"
-       inkscape:transform-center-x="2.2951767e-005"><tspan
+       transform="scale(1.1111527,0.89996631)"
+       inkscape:transform-center-y="115.49882"
+       inkscape:transform-center-x="7.2657798e-005"><tspan
          sodipodi:role="line"
          id="tspan3958-3-3-7"
-         x="863.55249"
-         y="1180.2059"
-         style="font-size:444.84570313px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#a1caf1;fill-opacity:1;font-family:Palatino Linotype;-inkscape-font-specification:Palatino Linotype Bold">2014</tspan></text>
+         x="827.80408"
+         y="1139.2178"
+         style="font-size:337.83285522px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#a1caf1;fill-opacity:1;font-family:Palatino Linotype;-inkscape-font-specification:Palatino Linotype Bold">2014</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:166.45306396px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#a1caf1;fill-opacity:1;stroke:none;font-family:Lora;-inkscape-font-specification:Sans"
@@ -204,10 +204,10 @@
     </g>
     <g
        id="g4511"
-       transform="matrix(1.6455689,0,0,1.6455689,788.29757,-298.60467)">
+       transform="matrix(1.2911389,0,0,1.2911389,577.80367,-44.636838)">
       <path
          transform="matrix(0.37980813,0,0,0.3347464,-498.70962,671.92269)"
-         d="m -165.71429,253.7338 a 297.14285,337.14285 0 1 1 -594.28571,0 297.14285,337.14285 0 1 1 594.28571,0 z"
+         d="m -165.71429,253.7338 c 0,186.19885 -133.03539,337.14285 -297.14286,337.14285 C -626.96461,590.87665 -760,439.93265 -760,253.7338 c 0,-186.198861 133.03539,-337.142858 297.14285,-337.142858 164.10747,0 297.14286,150.943997 297.14286,337.142858 z"
          sodipodi:ry="337.14285"
          sodipodi:rx="297.14285"
          sodipodi:cy="253.7338"
@@ -217,7 +217,7 @@
          sodipodi:type="arc" />
       <path
          transform="matrix(0.30288505,0,0,0.26694974,-535.74271,687.69662)"
-         d="m -165.71429,253.7338 a 297.14285,337.14285 0 1 1 -594.28571,0 297.14285,337.14285 0 1 1 594.28571,0 z"
+         d="m -165.71429,253.7338 c 0,186.19885 -133.03539,337.14285 -297.14286,337.14285 C -626.96461,590.87665 -760,439.93265 -760,253.7338 c 0,-186.198861 133.03539,-337.142858 297.14285,-337.142858 164.10747,0 297.14286,150.943997 297.14286,337.142858 z"
          sodipodi:ry="337.14285"
          sodipodi:rx="297.14285"
          sodipodi:cy="253.7338"
