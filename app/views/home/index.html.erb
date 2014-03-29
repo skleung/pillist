@@ -2,7 +2,6 @@
 	<div class = "landing-background">
 	<%=image_tag('pills background.png', :id => "landing-background")%>
 	</div>
-	<div class = "content">
 		<div class = "logo-wrapper">
 			<!-- <div class = "logo"> -->
 			<%= image_tag('pillist.logo.png', :class => "logo") %>
@@ -11,7 +10,18 @@
 		<div class = "tagline">
 			<div class = "title"><i>Reimagine</i><b> medication organization</b> </div>
 		</div>
-	</div>
+		<%= form_for @user, url: {controller: "users", action: "create"}, html: {id: "email-input"} do |f| %>
+			<center><strong>Sign up</strong> to receive updates:<br/></center>
+			<div class = "email-icon" > <%=image_tag "email.png" %></div>
+			<%= f.text_field :email, :required => true, :placeholder => "email address" %>
+<!-- 				<%= f.radio_button(:type, "patient") %>
+			<%= f.label(:type_patient, "Patient") %>
+			<%= f.radio_button(:type, "physician") %>
+			<%= f.label(:type_physician, "Physician") %>
+			<%= f.radio_button(:type, "pharmacy") %>
+			<%= f.label(:type_pharmacy, "Pharmacy") %> -->
+			<%= f.submit "Go", :id => 'user_submit' %>
+		<%end%>
 	<a href = "#about" class = "scroll-down scroll">
 		<div class = "overlay">
 			Learn More<br/>
@@ -27,87 +37,120 @@
 			</p>
 		</li>
 	</div>
-	<ul class = "about-list">		
-		<li class = "about-list-1">
-			<h1>Patients need:</h1>
-			<strong>a better way of keeping track of their medications.</strong>
-			<p>Five common ways patients manage their medications:
-			<ul>
-				<li>They don't</li>
-				<li>Hand-written lists on paper</li>
-				<li>Pills boxes</li>
-				<li>medicine bottles on hand</li>
-				<li>Excel spreadsheets with manually entered data</li>
-			</ul> 
-			</p>
-		</li>
-		<li class = "about-list-2">
-			<h1>Why is this a problem for patients?</h1>
-			<ol>
-				<li> It’s hard to remember to take medications consistently at specific times </li>
-				<li> Medications may change following a clinic visit or hospitalization</li>
-				<li>It can be difficult to remember how to take certain medications (e.g. without food)</li>
-				<li> There can be confusion with brand-name and generic medications</li>
-				<li> Medications are becoming increasingly specialized as multiple formulations (e.g. extended-
-				release) and multiple strengths of the same drug become available </li>
-				<li> Keeping track of available refills and when to refill can be challenging</li>
-			</ol>
-		</li>
-		<li class = "about-list-3">
-			<h1>The facts:</h1>
-			<p> An estimated 
-
-1/3 – 1/2 of U.S. patients do not adhere to prescribed medication regimens. Studies have consistently 
-
-shown that 20% to 30% of prescriptions are never filled by patients. The lack of adherence has dramatic 
-
-effects on health. In the U.S., it is estimated to cause approximately 125,000 deaths, at least 10% of 
-
-hospitalizations, and a substantial increase in morbidity and mortality. 
-			</p>
-		</li>
-		
-		<li class = "about-list-4">
-			<h1>Physicans need:</h1>
-			<p>to perform efficient Medication Reconciliations and deliver the
-
-best possible care while caregivers need this information to help the patient take his or her medications.</p>
-		</li>
-
-		<li class = "about-list-5">
-		<h1>Pharmacies need:</h1>
-		<p>
- a better method of communicating with patients and incentivizing them to refill 
-
-prescriptions in order to keep the patients healthy and happy.</p>
-		</li>
-
-		<li class = "about-list-6">
-		<h1>Our aim:</h1>
-		<p> to create a mobile/web application that automatically generates a simplified and organized
-
-medication list that can be shared with the patient’s providers and caregivers, saves time with electronic 
-
-refill capability, and provides a better relationship with a patient’s pharmacy and pharmacist through a 
-
-rewards system.</p>
-		</li>
-		<div id = "email-input">
-			<div class = "email-prompt">
-				<strong>Sign up</strong> to get on the mailing list:
-			<div class = "email-icon" > <%=image_tag "email.png" %></div>
-			</div>
-				<input autocomplete = "off" id = "email" placeholder = "email address" type = "text">
-			</div>
+	<div class = "about-options">
+		<div class = "option-list">
+			
+			
+			<a href = "#patient" class = "about-option active" id = "patient-tab">
+			
+				For Patients<br/>
+				<%=image_tag("patient.png", :class=> "active", :id=>"patient-tab") %>
+			</li>
+			</a>
+			
+			<a href = "#physician" class = "about-option">
+				
+					For Physicians<br/>
+					<%=image_tag("doctor.png", :id=>"physician-tab") %>
+				
+			</a>
+			<a href = "#pharmacy" class = "about-option">
+				For Pharmacies<br/>
+				
+					<%=image_tag("pharmacy.png", :id=>"pharmacy-tab") %>
+				
+			</a>
+			
 		</div>
-	</ul>
+	</div>
 </div>
-<div id = "contact">
-	or <strong>contact us</strong> at <a href = "mailto:info@pillist.com">info@pillist.com</a>
+<div class = "option-wrapper">
+	<div id = "patient" class = "show">
+		<ul class = "about-list">		
+			<li class = "about-list-1">
+				<h1>Patients need:</h1>
+				<strong>a better way of keeping track of their medications.</strong>
+				<p>Five common ways patients manage their medications:
+				<ul>
+					<li>They don't</li>
+					<li>Hand-written lists on paper</li>
+					<li>Pills boxes</li>
+					<li>medicine bottles on hand</li>
+					<li>Excel spreadsheets with manually entered data</li>
+				</ul> 
+				</p>
+			</li>
+			<li class = "about-list-2">
+				<h1>Why is this a problem for patients?</h1>
+				<ol>
+					<li> It’s hard to remember to take medications consistently at specific times </li>
+					<li> Medications may change following a clinic visit or hospitalization</li>
+					<li>It can be difficult to remember how to take certain medications (e.g. without food)</li>
+					<li> There can be confusion with brand-name and generic medications</li>
+					<li> Medications are becoming increasingly specialized as multiple formulations (e.g. extended-
+					release) and multiple strengths of the same drug become available </li>
+					<li> Keeping track of available refills and when to refill can be challenging</li>
+				</ol>
+			</li>
+		</ul>
+	</div>
+	<div id = "physician" class = "hide">
+		<ul class = "about-list">	
+			<li class = "about-list-3">
+				<h1>The facts:</h1>
+				<p> An estimated 
+
+	1/3 – 1/2 of U.S. patients do not adhere to prescribed medication regimens. Studies have consistently 
+
+	shown that 20% to 30% of prescriptions are never filled by patients. The lack of adherence has dramatic 
+
+	effects on health. In the U.S., it is estimated to cause approximately 125,000 deaths, at least 10% of 
+
+	hospitalizations, and a substantial increase in morbidity and mortality. 
+				</p>
+			</li>
+			
+			<li class = "about-list-4">
+				<h1>Physicans need:</h1>
+				<p>to perform efficient Medication Reconciliations and deliver the
+
+	best possible care while caregivers need this information to help the patient take his or her medications.</p>
+			</li>
+		</ul>
+	</div>
+	<div id = "pharmacy" class = "hide">
+		<ul class = "about-list">	
+			<li class = "about-list-5">
+			<h1>Pharmacies need:</h1>
+			<p>
+	 a better method of communicating with patients and incentivizing them to refill 
+
+	prescriptions in order to keep the patients healthy and happy.</p>
+			</li>
+
+			<li class = "about-list-6">
+			<h1>Our aim:</h1>
+			<p> to create a mobile/web application that automatically generates a simplified and organized
+
+	medication list that can be shared with the patient’s providers and caregivers, saves time with electronic 
+
+	refill capability, and provides a better relationship with a patient’s pharmacy and pharmacist through a 
+
+	rewards system.</p>
+			</li>
+	<!-- 		<div id = "email-input">
+				
+					<input autocomplete = "off" id = "email" placeholder = "email address" type = "text">
+				</div> -->
+		</ul>
+	</div>
 </div>
+
 
 <div id = "footer">
-	<a href = "#home"><%= image_tag('pilllist.copyright.png', :class => "sm-logo") %></a> 
+	<a href = "#home"><%= image_tag('pilllist.copyright.png', :class => "sm-logo") %></a> <span id = "contact">
+	<strong>contact us</strong> at <a href = "mailto:info@pillist.com">info@pillist.com</a>
+</span>
 </div>
 
 <%= javascript_include_tag 'jquery', 'application' %>
