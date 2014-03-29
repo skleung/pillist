@@ -1,4 +1,3 @@
-config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif*.svg)
 require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
