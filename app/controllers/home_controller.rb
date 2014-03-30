@@ -8,11 +8,13 @@ class HomeController < ApplicationController
     respond_to do |format|
       if @user.save
         UserMailer.signup_email(@user).deliver
-        format.html { redirect_to(@user, notice: 'Email saved') }
+        flash[:notice] = 'Signup Sucessful!'
+        format.html { redirect_to(action: 'index' ) }
         format.json { render json: @user, status: :created, location: @user }
       else
+        flash[:error] = 'Oops, someting went wrong!'
         format.json { render json: @user.errors, status: :unprocessable_entity }
-        format.html { render controller: 'home', action: 'index' }
+        format.html { render action: 'index'}
       end
     end
   end

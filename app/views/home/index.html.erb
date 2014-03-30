@@ -8,11 +8,24 @@
 		<div class = "tagline">
 			<div class = "title"><i>Reimagine</i><b> medication organization</b> </div>
 		</div>
+
 		<%= form_for @user, url: {controller: "home", action: "create"}, html: {id: "email-input"} do |f| %>
 			<center><strong>Sign up</strong> to receive updates:<br/></center>
 			<div class = "email-icon" > <%=image_tag "email.png" %></div>
 			<%= f.text_field :email, :required => true, :placeholder => "email address" %>
 			<%= f.submit "Go", :id => 'user_submit' %>
+			<% if flash[:notice] %>
+				<center><p id="success"><%= flash[:notice] %></p></center>
+			<%end%>
+			<% if flash[:error] %>
+				<span id="error"><small><%= flash[:error] %></small></span>
+			<%end%>
+		    <% if @user.errors.any? %>	 
+			    <% @user.errors.full_messages.each do |msg| %>
+			      <span id = "error"><small><%= msg %></small></span>
+			    <% end %>
+			<% end %>
+			
 		<%end%>
 	<a href = "#about" class = "scroll-down scroll">
 		<div class = "overlay">
