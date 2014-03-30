@@ -1,0 +1,422 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+ */
+
+
+@media (max-width: 480px) {
+ 	.logo{
+	position: absolute;
+	left: -30%%;
+	width: 60%;
+	margin-left: 50%;
+	}
+	.about-list{
+		width: 95%;
+	}
+	.about-blurb{
+		width: 90%;
+	}
+}
+#landing-background{
+	width: 100%;
+	position: absolute;
+	top: 50%;
+}
+.landing-background {
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	overflow: hidden;
+}
+.shading{
+	width:100%;
+    height:100%;
+    position:absolute;
+    background-color:#000;
+    opacity:0.1;
+}
+.logo-wrapper{
+	position: relative;
+	height: 150px;
+	padding-top: 5%;
+}
+.sm-logo{
+	height: 30px;
+	margin-bottom: -12px;
+}
+.logo{
+	position: absolute;
+	left: -15%%;
+	width: 30%;
+	margin-left: 50%;
+}
+.tagline{
+	margin-top: 40px;
+	height: auto;
+	font-family: 'Lora', sans-serif;
+	color: #fff;
+}
+.title {
+  margin-top: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: lowercase;
+  font-weight: 400;
+  text-align: center;
+  color: #A1CAF1;
+/*  position: absolute;
+	left: -35%;
+	width: 70%;
+	margin-left: 50%;*/
+}
+body{
+	font-family: 'PT Sans', sans-serif;
+	background-color: #eee;
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	color: #555555;
+	font-size: 20px;
+
+}
+p, ol, ul{
+	line-height: 150%;
+}
+.about-list{
+	width: 60%;
+	margin:auto;
+	list-style: none;
+}
+.about-blurb{
+	position: relative;
+	width: 50%;
+	margin:auto;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.iphone-wrapper{
+	margin:0px;
+	width: 30%;
+	display:inline-block;
+}
+.schematic-wrapper{
+	margin:0px;
+	width: 50%;
+	display:inline-block;
+	border: 1px white solid;
+}
+.iphone-mockup{
+	width: 100%;
+	height:auto;
+}
+#about{
+	z-index: 10;
+	color: white;
+	background-color: #314354;
+}
+body h1{
+	font-family: 'Lora', serif;
+	color: #85AED5;
+	margin-bottom: 5px;
+}
+
+.about-list > li {
+	position: relative;
+	background-color: #fff;
+	margin: 0 0 70px 0px;
+	padding: 0px 15px 30px;
+	font-size: 18px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	z-index: 1;
+	-webkit-transition: all 0.6s ease-in-out 0s;
+	-moz-transition: all 0.6s ease-in-out 0s;
+	-o-transition: all 0.6s ease-in-out 0s;
+	transition: all 0.6s ease-in-out 0s;
+}
+
+strong{
+	color: #85AED5;
+}
+.description{
+	font-family: 'PT Sans', sans-serif;
+	font-size: 18px;
+}
+.email-prompt strong{
+	text-decoration: underline;
+	font-weight: 700;
+}
+.email-prompt{
+	position: relative;
+	text-align: center;
+	left: 3%;
+	font-size: 20px;
+	font-family: 'Lora', sans-serif;
+}
+.email-icon{
+	position: absolute;
+	top: 40px;
+	left: 20px;
+	width: 32px;
+	height: 23px;
+}
+.email-icon > img{
+	height: 100%;
+	width: auto;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	vertical-align: middle;
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: gray;
+	-webkit-filter: grayscale(1);
+}
+#email-input{
+	position: relative;
+	width: 462px;
+	margin-left: -231px;
+	left: 50%;
+	margin-top: 40px;
+	z-index: 4;
+}
+#email, #user_email{
+	width: 462px;
+	height: 55px;
+	padding: 0 60px 0 67px;
+	font-family: 'PT Sans',sans-serif;
+	border-radius: 28px;
+	border: 1px solid #dcdcdc;
+	-webkit-box-shadow: inset 0 3px 3px -2px #cccccc;
+	-moz-box-shadow: inset 0 3px 3px -2px #cccccc;
+	box-shadow: inset 0 3px 3px -2px #cccccc;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 28px;
+	line-height: 55px;
+	color: #717171;
+	vertical-align: middle;
+}
+#user_submit{
+	position: absolute;
+	top: 40px;
+	right: 20px;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	vertical-align: middle;
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: gray;
+	-webkit-filter: grayscale(1);
+	color: white;
+	background-color: black;
+	border-radius: 50%;
+	height: 33px;
+	width: 33px;
+	font-size: 14px;
+	font-weight: 700;
+	text-align: center;
+
+}
+#user_submit:hover{
+	cursor: pointer;
+}
+#user_email:focus{
+	outline:none;
+}
+#contact{
+	text-align: center;
+	font-family: "Lora", serif;
+	font-size: 18px;
+	margin-top: 10px;
+}
+#contact a{
+	color: #85AED5;
+	text-decoration: none;
+}
+#footer{
+	margin:0px 0px 0px 0px;
+	border-top: 1px solid #999;
+	padding-top: 10px;
+	vertical-align: center;
+	text-align: center;
+	background-color: white;
+}
+.row{
+	width: 100%;
+}
+.col-md-4{
+	width: 33%;
+	display: inline-block;
+}
+.col-md-8{
+	width: 66%;
+	display: inline-block;
+}
+
+.wrapper{
+	width: 80%;
+	margin: auto;
+	height: 100%;
+}
+.scroll-down{
+	position: absolute;
+	height: 60px;
+	bottom: 0px;
+	z-index:50;
+	text-transform: uppercase;
+	font-size: 20px;
+	text-align: center;
+	width: 100%;
+	color: white;
+	text-decoration: none;
+}
+.down-icon{
+	height: 20px;
+	z-index: 55;
+}
+.scroll-down:hover > .overlay{
+    width:100%;
+    height:100%;
+    position:absolute;
+    background-color:#000;
+    opacity:0.5;
+    z-index:30;
+}
+.content{
+	position:relative;
+}
+.shadow{
+	text-shadow: 2px 2px 2px #222222;
+}
+.sm-shadow{
+	text-shadow: 1px 1px 2px #222222;
+}
+.outline{
+	text-shadow: 1px 1px 0 #666, 1px -1px 0 #666, -1px 1px 0 #666, -1px -1px 0 #666;
+}
+.about-blurb > h1{
+	padding-bottom: 15px;
+	border-bottom: 1px solid white;
+}
+.about-options{
+	margin-top: 30px;
+	height: 150px;
+	width: 100%;
+	background-color: white;
+}
+.option-list{
+	width: 50%;
+	margin:auto;
+	height: 100%;
+}
+.option-list > ul{
+	list-style: none;
+	margin: auto;
+	height: inherit;
+	max-width: auto;
+}
+.about-option{
+	padding-top: 10px;
+	width: 30%;
+	text-align: center;
+	text-decoration: none;
+	display:inline-block;
+	color: #aaa;
+	text-decoration: none;
+	font-style: "PT Sans", sans-serif;
+	font-size: 20px;
+	font-weight: 700;
+}
+.option-list > a{
+	display:inline-block;
+}
+.about-option > img{
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+	vertical-align: middle;
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: gray;
+	-webkit-filter: grayscale(1);
+}
+.about-option:hover{
+	color: #A1CAF1;
+}
+.about-option:hover > img, .active > img, .active{
+	color: #A1CAF1;
+    opacity: 1;
+    -webkit-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+}
+.option-wrapper{
+	width: 100%;
+	padding-top: 100px;
+}
+
+.option-list img{
+	max-height: 60%;
+}
+.show{
+	display: block;
+}
+#pharmacy, #physician{
+	display:none;
+}
+/* line 3, C:/Users/skleung/Documents/GitHub/pillist/app/assets/stylesheets/scaffolds.css.scss */
+#notice {
+  color: green;
+}
+
+/* line 7, C:/Users/skleung/Documents/GitHub/pillist/app/assets/stylesheets/scaffolds.css.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 13, C:/Users/skleung/Documents/GitHub/pillist/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 20, C:/Users/skleung/Documents/GitHub/pillist/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 30, C:/Users/skleung/Documents/GitHub/pillist/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}

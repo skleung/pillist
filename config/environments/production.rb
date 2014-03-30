@@ -34,22 +34,6 @@ Pillist::Application.configure do
 
   # Version of your assets, change this if you want to expire all your assets.
   config.assets.version = '1.0'
-  require 'tlsmail'
-      Net::SMTP.enable_tls(OpenSSL::SSL::VERIFY_NONE)
-      ActionMailer::Base.delivery_method = :smtp
-      ActionMailer::Base.perform_deliveries = true
-      ActionMailer::Base.raise_delivery_errors = true
-      ActionMailer::Base.smtp_settings = {
-          :address =>  "smtp.gmail.com",
-          :port =>  "587",
-          :domain =>  "pillist.com",
-          :enable_starttls_auto =>  true,
-          :authentication => :login,
-          :user_name => "sherman@pillist.com",
-          :password => "STOP HACKING YOU HACKER"
-      }
- 
-    config.action_mailer.raise_delivery_errors = true
 
   # Specifies the header that your server uses for sending files.
   # config.action_dispatch.x_sendfile_header = "X-Sendfile" # for apache
