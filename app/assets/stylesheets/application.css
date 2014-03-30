@@ -22,6 +22,9 @@
 	.about-list{
 		width: 95%;
 	}
+	.about-blurb{
+		width: 90%;
+	}
 }
 #landing-background{
 	width: 100%;
@@ -47,7 +50,7 @@
 .logo-wrapper{
 	position: relative;
 	height: 150px;
-	margin-top: 5%;
+	padding-top: 5%;
 }
 .sm-logo{
 	height: 30px;
@@ -97,13 +100,28 @@ p, ol, ul{
 	list-style: none;
 }
 .about-blurb{
+	position: relative;
 	width: 50%;
 	margin:auto;
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
+.iphone-wrapper{
+	margin:0px;
+	width: 30%;
+	display:inline-block;
+}
+.schematic-wrapper{
+	margin:0px;
+	width: 50%;
+	display:inline-block;
+	border: 1px white solid;
+}
+.iphone-mockup{
+	width: 100%;
+	height:auto;
+}
 #about{
-	margin-top: -75px;
 	z-index: 10;
 	color: white;
 	background-color: #314354;

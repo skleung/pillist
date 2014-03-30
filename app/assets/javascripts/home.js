@@ -1,4 +1,5 @@
 $(document).ready(function($) { 
+	$('.landing-background') .css({'min-height': $(window).height() +'px'});
 	$('#home') .css({'min-height': $(window).height() +'px'});
 	$('.option-wrapper') .css({'min-height': $(window).height() +'px'});
 });
@@ -14,7 +15,6 @@ $(".scroll").click(function(event){
 	//goto that anchor by setting the body scroll top to anchor top
 	$('html, body').animate({scrollTop: target_top}, 400);
 });
-
 
 $(".about-option").click(function(event){
 	event.preventDefault();
