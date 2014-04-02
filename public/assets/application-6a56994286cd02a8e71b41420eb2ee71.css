@@ -8,23 +8,16 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
- *= require_self
- *= require_tree .
+
+
  */
+
 
 @media only screen and (max-width: 650px), only screen and (max-height: 580px) {
 	html {
 	    zoom: 1;
 	}
-	#landing-background{
-		width: 100%;
-		position: absolute;
-		top: 80%;
-	}
-	.description{
-		font-family: 'PT Sans', sans-serif;
-		font-size: 14px;
-	}
+	
  	.logo{
 	position: absolute;
 	left: -30%%;
@@ -35,16 +28,13 @@
 		width: 95%;
 	}
 	.about-blurb{
-		width: 95%;
-	}
-	.about-blurb > h1{
-		font-size: 22px;
+		width: 90%;
 	}
 }
 #landing-background{
 	width: 100%;
 	position: absolute;
-	top: 65%;
+	top: 50%;
 }
 .landing-background {
 	position: absolute;
@@ -64,7 +54,7 @@
 }
 .logo-wrapper{
 	position: relative;
-	height: 200px;
+	height: 150px;
 	padding-top: 5%;
 }
 .sm-logo{
@@ -77,10 +67,9 @@
 	width: 30%;
 	margin-left: 50%;
 }
-.title-wrapper{
-	position: relative;
-	text-align: center;
-	margin-top: 10px;
+.tagline{
+	margin-top: 40px;
+	height: auto;
 	font-family: 'Lora', sans-serif;
 	color: #fff;
 }
@@ -99,7 +88,7 @@
 }
 body{
 	font-family: 'PT Sans', sans-serif;
-	background-color: #ddd;
+	background-color: #eee;
 	margin: 0px;
 	padding: 0px;
 	height: 100%;
@@ -119,24 +108,25 @@ p, ol, ul{
 	position: relative;
 	width: 50%;
 	margin:auto;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 .iphone-wrapper{
 	margin:0px;
 	width: 30%;
 	display:inline-block;
 }
-.video-wrapper{
-	height: auto;
-	text-align: center;
+.schematic-wrapper{
+	margin:0px;
+	width: 50%;
+	display:inline-block;
+	border: 1px white solid;
 }
 .iphone-mockup{
 	width: 100%;
 	height:auto;
 }
 #about{
-	position: relative;
 	z-index: 10;
 	color: white;
 	background-color: #314354;
@@ -189,7 +179,7 @@ strong{
 }
 .email-icon{
 	position: absolute;
-	top: 15px;
+	top: 40px;
 	left: 20px;
 	width: 32px;
 	height: 23px;
@@ -235,7 +225,7 @@ strong{
 }
 #user_submit{
 	position: absolute;
-	top: 15px;
+	top: 40px;
 	right: 20px;
 	opacity: 0.5;
 	filter: alpha(opacity=50);
@@ -338,8 +328,7 @@ strong{
 	border-bottom: 1px solid white;
 }
 .about-options{
-	position: absolute;
-	bottom: 0;
+	margin-top: 30px;
 	height: 150px;
 	width: 100%;
 	background-color: white;
@@ -364,14 +353,13 @@ strong{
 	color: #aaa;
 	text-decoration: none;
 	font-style: "PT Sans", sans-serif;
-	font-size: 16px;
+	font-size: 20px;
 	font-weight: 700;
 }
 .option-list > a{
 	display:inline-block;
 }
 .about-option > img{
-	margin:auto;
 	opacity: 0.7;
 	filter: alpha(opacity=70);
 	vertical-align: middle;
@@ -405,4 +393,38 @@ strong{
 }
 #pharmacy, #physician{
 	display:none;
+}
+/* line 3, C:/Users/skleung/Documents/GitHub/pillist/app/assets/stylesheets/scaffolds.css.scss */
+#notice {
+  color: green;
+}
+
+/* line 7, C:/Users/skleung/Documents/GitHub/pillist/app/assets/stylesheets/scaffolds.css.scss */
+.field_with_errors {
+  border-radius: 28px;
+  border: 1px solid red;
+  -webkit-box-shadow: inset 0 3px 3px -2px #990000;
+  -moz-box-shadow: inset 0 3px 3px -2px #990000;
+  box-shadow: inset 0 3px 3px -2px #990000;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 28px;
+  line-height: 55px;
+  vertical-align: middle;
+}
+
+/* line 21, C:/Users/skleung/Documents/GitHub/pillist/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 28, C:/Users/skleung/Documents/GitHub/pillist/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
 }

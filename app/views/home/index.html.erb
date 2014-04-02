@@ -5,13 +5,13 @@
 		<div class = "logo-wrapper">
 			<%= image_tag('pillist.logo.png', :class => "logo") %>
 		</div>
-		<div class = "tagline">
+		<div class = "title-wrapper">
 			<div class = "title"><i>Reimagine</i><b> medication organization</b> </div>
 		</div>
 
 		<%= form_for @user, url: {controller: "home", action: "create"}, html: {id: "email-input"} do |f| %>
-			<center><strong>Sign up</strong> to receive updates:<br/></center>
-			<div class = "email-icon" > <%=image_tag "email.png" %></div>
+<!-- 			<center><strong>Sign up</strong> to receive updates:<br/></center>
+ -->			<div class = "email-icon" > <%=image_tag "email.png" %></div>
 			<%= f.text_field :email, :required => true, :placeholder => "email address" %>
 			<%= f.submit "Go", :id => 'user_submit' %>
 			<% if flash[:notice] %>
@@ -35,19 +35,18 @@
 	</a>
 </div>
 <div id = "about">
-	<div class = "about-blurb" id = "about-list-start">
+	<div class = "about-blurb" id = "about-top">
 		<h1>Medication organization <i>made simple</i></h1>
 			<p class = "description">
 			Our company, <strong>Pillist™</strong>, is developing a mobile and web application to help patients better manage their medications by automatically generating a simplified and organized medication list through partnership with the patient’s own pharmacy.
 			</p>
-		<div class = "row">
-			<div class = "iphone-wrapper">
-				<%=image_tag('pillist.logo.iphone.png', :class => "iphone-mockup") %>
-			</div>
-			<div class = "schematic-wrapper">
-				<center> Placeholder for schematic </center>
-			</div>
+		
+		<div class = "video-wrapper">
+		<center>
+			<iframe width="560" height="315" src="http://www.youtube.com/embed/fSh6Q0F4d9Q" frameborder="0" allowfullscreen></iframe>
+		</center>
 		</div>
+
 	</div>
 	<div class = "about-options">
 		<div class = "option-list">
@@ -57,7 +56,6 @@
 			
 				For Patients<br/>
 				<%=image_tag("patient.png", :class=> "active",:id=>"patient-tab") %>
-			</li>
 			</a>
 			
 			<a href = "#physician" class = "about-option" id = "physician-tab">
@@ -92,7 +90,7 @@
 				</ul> 
 				</p>
 			</li>
-			<li class = "about-list-2">
+<!-- 			<li class = "about-list-2">
 				<h1>Why is this a problem for patients?</h1>
 				<ol>
 					<li> It’s hard to remember to take medications consistently at specific times </li>
@@ -103,7 +101,7 @@
 					release) and multiple strengths of the same drug become available </li>
 					<li> Keeping track of available refills and when to refill can be challenging</li>
 				</ol>
-			</li>
+			</li> -->
 		</ul>
 	</div>
 	<div id = "physician">
@@ -122,12 +120,12 @@
 				</p>
 			</li>
 			
-			<li class = "about-list-4">
+<!-- 			<li class = "about-list-4">
 				<h1>Physicans need:</h1>
 				<p>to perform efficient Medication Reconciliations and deliver the
 
 	best possible care while caregivers need this information to help the patient take his or her medications.</p>
-			</li>
+			</li> -->
 		</ul>
 	</div>
 	<div id = "pharmacy">

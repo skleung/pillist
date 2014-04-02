@@ -1,6 +1,18 @@
 $(document).ready(function($) { 
 	$('.landing-background') .css({'min-height': $(window).height() +'px'});
-	$('#home') .css({'min-height': $(window).height() +'px'});
+	$('#home').css({'min-height': $(window).height() +'px'});
+	$('#about').css({'min-height': $(window).height() +'px'});
+
+	// $('#about-top').css({'height': ($(window).height()-$(".about-options").height()) +'px'});
+	$('.option-wrapper') .css({'min-height': $(".show").height() +'px'});
+});
+
+$(window).resize(function() { 
+	$('.landing-background').css({'min-height': $(window).height() +'px'});
+	$('#about').css({'min-height': $(window).height() +'px'});
+	$('#home').css({'min-height': $(window).height() +'px'});
+	// $('#about-top').css({'height': ($(window).height()-$(".about-options").height()) +'px'});
+	$('.option-wrapper') .css({'min-height': $(".show").height() +'px'});
 });
 
 $(".scroll").click(function(event){
