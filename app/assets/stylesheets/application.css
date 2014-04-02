@@ -335,6 +335,8 @@ strong{
 }
 .about-blurb > h2{
 	padding-bottom: 15px;
+	font-family: "Lora", serif;
+	color: #85AED5;
 	font-size: 40px;
 	border-bottom: 1px solid white;
 }
