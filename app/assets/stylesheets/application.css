@@ -333,7 +333,7 @@ strong{
 .outline{
 	text-shadow: 1px 1px 0 #666, 1px -1px 0 #666, -1px 1px 0 #666, -1px -1px 0 #666;
 }
-.about-blurb > h1{
+.about-blurb > h2{
 	padding-bottom: 15px;
 	font-size: 40px;
 	border-bottom: 1px solid white;
