@@ -15,10 +15,10 @@
 			<%= f.text_field :email, :required => true, :placeholder => "email address" %>
 			<%= f.submit "Go", :id => 'user_submit' %>
 			<% if flash[:notice] %>
-				<center><p id="success"><%= flash[:notice] %></p></center>
+				<center><span class = "success"><%= flash[:notice] %></span></center>
 			<%end%>
 			<% if flash[:error] %>
-				<span id="error"><small><%= flash[:error] %></small></span>
+				<span class = "error"><small><%= flash[:error] %></small></span>
 			<%end%>
 		    <% if @user.errors.any? %>	 
 			    <% @user.errors.full_messages.each do |msg| %>
@@ -55,7 +55,7 @@
 			<a href = "#patient" class = "about-option active" id = "patient-tab">
 			
 				For Patients<br/>
-				<%=image_tag("patient.png", :class=> "active",:id=>"patient-tab") %>
+				<%=image_tag("patient-man.png", :class=> "active",:id=>"patient-tab") %>
 			</a>
 			
 			<a href = "#physician" class = "about-option" id = "physician-tab">
@@ -159,7 +159,7 @@
 
 <div id = "footer">
 	<a href = "#home"><%= image_tag('pilllist.copyright.png', :class => "sm-logo") %></a> <span id = "contact">
-	<strong>contact us</strong> at <a href = "mailto:info@pillist.com">info@pillist.com</a>
+	contact us at <a href = "mailto:info@pillist.com">info@pillist.com</a>
 </span>
 </div>
 
