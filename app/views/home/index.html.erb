@@ -6,7 +6,7 @@
 			<%= image_tag('pillist.logo.png', :class => "logo") %>
 		</div>
 		<div class = "title-wrapper">
-			<div class = "title"><i>Reimagine</i><b> medication organization</b> </div>
+			<div class = "title"><b>Medication organization <i>made simple</i></b> </div>
 		</div>
 
 		<%= form_for @user, url: {controller: "home", action: "create"}, html: {id: "email-input"} do |f| %>
@@ -36,14 +36,14 @@
 </div>
 <div id = "about">
 	<div class = "about-blurb" id = "about-top">
-		<h2>Medication organization <i>made simple</i></h2>
+		<h2><i>Reimagine</i> Medication Organization</h2>
 			<p class = "description">
-			We're reimagining the way patients, pharmacies, and physicians manage medication.
+			Pillist helps patients better manage their medications by automatically generating a simple, dynamic, and organized medication list directly from pharmacy databases.
 			</p>
 		
 		<div class = "video-wrapper">
 		<center>
-<iframe width="420" height="315" src="//www.youtube.com/embed/SyExZn_g2Ng" frameborder="0" allowfullscreen></iframe>		</center>
+<iframe src="//player.vimeo.com/video/91351390" width="500" height="882" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 		</center>
 		</div>
 
 	</div>
@@ -56,19 +56,19 @@
 				For Patients<br/>
 				<%=image_tag("patient-man.png", :class=> "active",:id=>"patient-tab") %>
 			</a>
-			
-			<a href = "#physician" class = "about-option" id = "physician-tab">
-				
-					For Physicians<br/>
-					<%=image_tag("doctor.png", :id=>"physician-tab") %>
-				
-			</a>
 			<a href = "#pharmacy" class = "about-option" id = "pharmacy-tab">
 				For Pharmacies<br/>
 				
 					<%=image_tag("pharmacy.png", :id=>"pharmacy-tab") %>
 				
 			</a>
+			<a href = "#physician" class = "about-option" id = "physician-tab">
+				
+					For Physicians<br/>
+					<%=image_tag("doctor.png", :id=>"physician-tab") %>
+				
+			</a>
+			
 			
 		</div>
 	</div>
@@ -77,15 +77,10 @@
 	<div id = "patient" class = "show">
 		<ul class = "about-list">		
 			<li class = "about-list-1">
-				<h1>Patients need:</h1>
-				<strong>a better way of keeping track of their medications.</strong>
-				<p>Five common ways patients manage their medications:
+				<h1>A better way to manage medications</h1>
 				<ul>
-					<li>They don't</li>
-					<li>Hand-written lists on paper</li>
-					<li>Pills boxes</li>
-					<li>medicine bottles on hand</li>
-					<li>Excel spreadsheets with manually entered data</li>
+					<li>Pillist will automatically provide an organized and dynamic medication list</li>
+					<li>Patients will be able to set reminders, research medication information, and order prescription refills making it easier to take medications</li>
 				</ul> 
 				</p>
 			</li>
@@ -103,20 +98,15 @@
 			</li> -->
 		</ul>
 	</div>
-	<div id = "physician">
+	<div id = "pharmacy">
 		<ul class = "about-list">	
 			<li class = "about-list-3">
-				<h1>The facts:</h1>
-				<p> An estimated 
-
-	1/3 – 1/2 of U.S. patients do not adhere to prescribed medication regimens. Studies have consistently 
-
-	shown that 20% to 30% of prescriptions are never filled by patients. The lack of adherence has dramatic 
-
-	effects on health. In the U.S., it is estimated to cause approximately 125,000 deaths, at least 10% of 
-
-	hospitalizations, and a substantial increase in morbidity and mortality. 
-				</p>
+				<h1>Better customer service, convenience, and loyalty</h1>
+				<ul>
+				<li>Pillist will offer pharmacies an innovative and differentiable clinical tool for their customers</li>
+				<li>Pharmacies will be able to increase prescription volume and improve customer service with
+convenient refills and better customer communication</li>
+				</ul>
 			</li>
 			
 <!-- 			<li class = "about-list-4">
@@ -127,25 +117,14 @@
 			</li> -->
 		</ul>
 	</div>
-	<div id = "pharmacy">
+	<div id = "physician">
 		<ul class = "about-list">	
 			<li class = "about-list-5">
-			<h1>Pharmacies need:</h1>
-			<p>
-	 a better method of communicating with patients and incentivizing them to refill 
-
-	prescriptions in order to keep the patients healthy and happy.</p>
-			</li>
-
-			<li class = "about-list-6">
-			<h1>Our aim:</h1>
-			<p> to create a mobile/web application that automatically generates a simplified and organized
-
-	medication list that can be shared with the patient’s providers and caregivers, saves time with electronic 
-
-	refill capability, and provides a better relationship with a patient’s pharmacy and pharmacist through a 
-
-	rewards system.</p>
+			<h1>Accurate and updated medication lists</h1>
+				<ul>
+				<li>Pillist will allow physicians and other providers to have access to their patient’s organized and updated medication list to perform an efficient and accurate medication reconciliation</li>
+				<li>Physicians will be able to review the patient’s refill data to differentiate between medication efficacy and medication adherence to provide better care</li>
+				</ul>
 			</li>
 	<!-- 		<div id = "email-input">
 				
