@@ -22,6 +22,10 @@ $(document).ready(function(){
 	});
 
 });
+
+$(document).ready(function(){
+	$("#youtube").css({'height': $('#youtube').width()/1.33 + 'px'});
+});
 $(document).ready(function($) { 
 	$('.landing-background') .css({'min-height': $(window).height() +'px'});
 	$('#home').css({'min-height': $(window).height() +'px'});
