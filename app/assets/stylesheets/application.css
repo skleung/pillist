@@ -57,14 +57,24 @@
 #back-top a:hover span {
 	background-color: #454545;
 }
+#back-top span > img {
+		margin-top: 15%;
+		z-index: 31;
+		width: 70%;
+		height: auto;
+	}
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 520px) {
 	html,body
 	{
 	    width: 100%;
 	    height: 100%;
 	    margin: 0px;
 	    padding: 0px;
+	}
+	#youtube{
+		width: 380;
+		height: 285;
 	}
 	#back-top {
 		position: fixed;
@@ -77,6 +87,13 @@
 		width: 50px;
 		height: 50px;
 	}
+	#back-top span > img {
+		margin-top: 15%;
+		z-index: 31;
+		width: 70%;
+		height: auto;
+	}
+
 	#landing-background{
 		width: 100%;
 		position: absolute;
@@ -158,6 +175,7 @@
 		margin:auto;
 		padding-top: 20px;
 		padding-bottom: 20px;
+		text-align: center;
 	}
 	.iphone-wrapper{
 		margin:0px;
@@ -182,7 +200,7 @@
 	body h1{
 		font-family: 'Lora', serif;
 		color: #85AED5;
-		margin-bottom: 5px;
+		margin-bottom: 15px;
 	}
 
 	.about-list > li {
@@ -257,8 +275,8 @@
 	}
 	#email-input{
 		position: relative;
-		width: 462px;
-		margin-left: -231px;
+		width: 400px;
+		margin-left: -200px;
 		left: 50%;
 		margin-top: 40px;
 		z-index: 4;
@@ -466,7 +484,7 @@
 	}
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 520px) {
 
 	#landing-background{
 		width: 100%;
@@ -548,6 +566,7 @@
 		margin:auto;
 		padding-top: 20px;
 		padding-bottom: 20px;
+		text-align: center;
 	}
 	.iphone-wrapper{
 		margin:0px;
@@ -572,7 +591,7 @@
 	body h1{
 		font-family: 'Lora', serif;
 		color: #85AED5;
-		margin-bottom: 5px;
+		margin-bottom: 15px;
 	}
 
 	.about-list > li {

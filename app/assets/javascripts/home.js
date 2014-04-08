@@ -56,7 +56,7 @@ $(".about-option").click(function(event){
 	var full_url = this.href;
 	var parts = full_url.split("#");
 	var trgt = parts[1];
-	$(".show").fadeOut();
+	$(".show").hide();
 	$(".show").removeClass("show");
 	$("#"+trgt).addClass("show");
 	$('.option-wrapper') .css({'min-height': $(".show").height() +'px'});
