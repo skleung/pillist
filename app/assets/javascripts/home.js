@@ -5,7 +5,7 @@ $(document).ready(function(){
 	// fade in #back-top
 	$(function () {
 		$(window).scroll(function () {
-			if ($(this).scrollTop() > $(window).height()) {
+			if ($(this).scrollTop() > ($(window).height()) - 80) {
 				$('#back-top').fadeIn();
 			} else {
 				$('#back-top').fadeOut();
@@ -24,12 +24,13 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-	$("#youtube").css({'height': $('#youtube').width()/1.33 + 'px'});
+	$("#youtube").css({'height': $('.video-wrapper').height()+ 'px'});
+	$("#youtube").css({'width': $('#youtube').height()*1.33 + 'px'});
 });
 $(document).ready(function($) { 
 	$('.landing-background') .css({'min-height': $(window).height() +'px'});
 	$('#home').css({'min-height': $(window).height() +'px'});
-	// $('#about').css({'min-height': $(window).height() +'px'});
+	$('#about').css({'min-height': $(window).height() +'px'});
 
 	// $('#about-top').css({'height': ($(window).height()-$(".about-options").height()) +'px'});
 	$('.option-wrapper') .css({'min-height': $(".show").height() +'px'});
@@ -37,8 +38,10 @@ $(document).ready(function($) {
 
 $(window).resize(function() { 
 	$('.landing-background').css({'min-height': $(window).height() +'px'});
-	// $('#about').css({'min-height': $(window).height() +'px'});
+	$('#about').css({'min-height': $(window).height() +'px'});
 	$('#home').css({'min-height': $(window).height() +'px'});
+	$("#youtube").css({'height': $('.video-wrapper').height()+ 'px'});
+	$("#youtube").css({'width': $('#youtube').height()*1.33 + 'px'});
 	// $('#about-top').css({'height': ($(window).height()-$(".about-options").height()) +'px'});
 	$('.option-wrapper') .css({'min-height': $(".show").height() +'px'});
 });
